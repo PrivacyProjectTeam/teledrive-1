@@ -7,5 +7,5 @@ COPY . .
 WORKDIR /apps
 
 RUN yarn cache clean
-RUN yarn install --network-timeout 1000000
-RUN yarn workspaces run build
+RUN yarn install
+RUN yarn run build
