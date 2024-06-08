@@ -8,4 +8,4 @@ WORKDIR /apps
 
 RUN yarn cache clean
 RUN yarn install
-RUN yarn run
+RUN yarn start
