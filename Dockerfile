@@ -8,8 +8,6 @@ WORKDIR /apps
 
 COPY yarn.lock .
 COPY package.json .
-COPY api/package.json api/package.json
-COPY web/package.json web/package.json
 COPY docker/.env .
 RUN yarn cache clean
 RUN yarn install --network-timeout 1000000
