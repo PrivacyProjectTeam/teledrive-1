@@ -6,7 +6,7 @@ COPY . .
 
 WORKDIR /apps
 
-RUN apt-get install build-essential
+RUN apt-get install build-essential -y
 RUN yarn cache clean
 RUN yarn install
 RUN yarn workspaces run build
